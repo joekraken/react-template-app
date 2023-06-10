@@ -5,8 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 // custom react components
 import Header from "./components/borders/Header"
 import Footer from "./components/borders/Footer"
-import Home from "./components/Home"
-import HomeGuest from "./components/HomeGuest"
+import Home from "./components/users/Home"
+import HomeGuest from "./components/users/HomeGuest"
 import About from "./components/utility/About"
 import Terms from "./components/utility/Terms"
 
@@ -44,13 +44,13 @@ function MainComponent() {
   // listen to changes to user isLoggedIn status
   useEffect(() => {
     if (state.isLoggedIn) {
-      localStorage.setItem("userToken", state.user.token)
+      localStorage.setItem("usertoken", state.user.token)
       localStorage.setItem("username", state.user.name)
-      localStorage.setItem("userAvatar", state.user.avatar)
+      localStorage.setItem("useravatar", state.user.avatar)
     } else {
-      localStorage.removeItem("userToken")
+      localStorage.removeItem("usertoken")
       localStorage.removeItem("username")
-      localStorage.removeItem("userAvatar")
+      localStorage.removeItem("useravatar")
     }
   }, [state.isLoggedIn])
 

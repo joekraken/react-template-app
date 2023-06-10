@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react"
-import Page from "./Page"
-import StateContext from "../StateContext"
+import Page from "../Page"
+import StateContext from "../../StateContext"
 
 function Home() {
   const appState = useContext(StateContext)
