@@ -10,10 +10,10 @@ base template for React apps
 - container
 - flashMessages
 - page
-- borderComponent=>[footer, header, headerUserLoggedIn, headerGuestLoggedOut]
-- postComponent=>[create, viewSingle, localStorage/cloudUpload] /_mongodb api_/
-- userComponent=>[home, guest, anon] /_include security/login api_/
-- utilComponent=>[about, calculator/clock, terms]
+- /borderComponent -> [footer, header, headerUserLoggedIn, headerGuestLoggedOut]
+- /postComponent -> [create, viewSingle, localStorage/cloudUpload] _mongodb api_
+- /userComponent -> [home, guest, anon] _include security & login api_
+- /utilityComponent -> [about, calculator/clock, terms]
 
 ---
 
