@@ -3,7 +3,7 @@ import React, { useContext } from "react"
 function HeaderUserLoggedIn(props) {
   return (
     <>
-      <div></div>
+      <div>TEST user logged in</div>
     </>
   )
 }

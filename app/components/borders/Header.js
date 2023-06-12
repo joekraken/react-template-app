@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import HeaderGuestLoggedOut from "./HeaderGuestLoggedOut"
 import HeaderUserLoggedIn from "./HeaderUserLoggedIn"
-import StateContext from ".../StateContext"
+import StateContext from "../../StateContext"
 
 function Header(props) {
   const appState = useContext(StateContext)
@@ -13,7 +13,7 @@ function Header(props) {
         <h4 className='my-0 mr-md-auto font-weight-normal'>
           <Link to='/' className='text-white'>
             {" "}
-            ComplexApp{" "}
+            App{" "}
           </Link>
         </h4>
         {appState.loggedIn ? <HeaderUserLoggedIn /> : <HeaderGuestLoggedOut />}

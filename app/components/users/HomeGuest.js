@@ -46,7 +46,7 @@ function HomeGuest() {
               <input onChange={e => setPassword(e.target.value)} id='password-register' name='password' className='form-control' type='password' placeholder='Create a password' />
             </div>
             <button type='submit' className='py-3 mt-4 btn btn-lg btn-success btn-block'>
-              Sign up for ComplexApp
+              Sign up for App
             </button>
           </form>
         </div>

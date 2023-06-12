@@ -3,7 +3,7 @@ import React, { useContext, useState } from "react"
 function HeaderGuestLoggedOut(props) {
   return (
     <>
-      <div></div>
+      <div>TEST user logged out</div>
     </>
   )
 }

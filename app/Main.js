@@ -21,7 +21,8 @@ function MainComponent() {
       name: "user name",
       avatar: "user avatar from gravatar",
       token: "user token for security"
-    }
+    },
+    flashMessages: []
   }
   // replace reducer with immer passes a draft copy of the state
   function ourReducer(draft, action) {
